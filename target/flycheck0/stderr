@@ -1,1 +1,5 @@
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
+error: key with no value, expected `=`
+  --> Cargo.toml:13:4
+   |
+13 | EOF
+   |    ^

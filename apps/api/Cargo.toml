@@ -1,0 +1,20 @@
+[package]
+name = "omniverse-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+tower = "0.4"
+tower-http = { version = "0.4", features = ["cors", "trace"] }
+serde = { workspace = true }
+serde_json = "1.0"
+uuid = { workspace = true }
+thiserror = "1.0"
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+# Internal dependencies
+omniverse-models = { path = "../../packages/models" }
+omniverse-database = { path = "../../packages/database" }
